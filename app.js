@@ -28,7 +28,8 @@ function getCountryTranslatedName(isoCode, language){
  * @returns {Array}
  */
 function getCountriesBySubregion(subregion){
-    
+    var sa = countries.filter(region => region.subregion === subregion);
+    return sa;
 }
 
 function main() {
